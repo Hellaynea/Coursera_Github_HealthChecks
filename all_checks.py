@@ -26,7 +26,8 @@ def check_root_full():
 def main():
     checks=[
     (check_reboot, "Pending Reboot"),
-    (check_root_full, "Root partition full")
+    (check_root_full, "Root partition full"),
+    (check_cpu_constrained, "CPU load too high.")
     ]
     everything_ok= True
     for check, msg in checks:
