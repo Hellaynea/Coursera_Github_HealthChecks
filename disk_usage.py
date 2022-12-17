@@ -2,7 +2,7 @@
 
 import shutil
 import sys
-
+#Para asegurarme de que el rebase funciona voy a crear este comentario. Al realizar el rebase, se debe añadir en el archivo all_checks incluido en la rama rebase.
 def check_disk_usage(disk, min_absolute, min_percent):
     """Returns True if there is enough free disk space, false otherwise"""
     du=shutil.disk_usage(disk)
