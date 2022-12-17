@@ -6,7 +6,7 @@ import sys
 def check_reboot():
     """Return True if the computer has a pending reboot."""
     return os.path.exists("/run/ reboot-required")
-
+#Añado aqui este comentario para probar el segundo ejemplo de rebase. En este caso, por CLI hemos añadido una función nueva, pero en fetch aparecerán cambios debido a este comentario.
 def check_disk_full(disk, min_gb, min_percent):
     """Returns True if there isn't enough disk space, False otherwise."""
     du = shutil.disk_usage(disk)
