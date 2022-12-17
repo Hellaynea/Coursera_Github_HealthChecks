@@ -13,7 +13,7 @@ def check_disk_usage(disk, min_absolute, min_percent):
     if percent_free < min_percent or gigabytes_free<min_absolute:
         return False
     return True
-
+#Para comprobar el rebase introduzco un comentario aqui.
 #Check for at least 2GB and 10% percent_free
 if not check_disk_usage("/", 2, 10):
     print("ERROR: Not enough disk space,")
